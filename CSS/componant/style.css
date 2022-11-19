@@ -1,0 +1,474 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap);
+
+
+
+.container{
+    max-width: 1170px;
+    background-color: #2EC8D5;
+    margin:auto;
+}
+
+
+
+
+.dropdown-item{
+    color: #EEEA2F;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container1{
+    width: 90%;
+    max-width: 1400px;
+    margin:auto;
+}
+
+h1{
+    color: #1a2f42;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed gray;
+}
+
+h1 span {
+    display: block;
+}
+
+h1 span:nth-child(1){
+    font-weight: normal;
+    color: #2EC8D5
+
+}
+
+
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-gap: 30px;
+    margin: 50px 0;
+ 
+}
+#container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-gap: 30px;
+    margin: 50px 0;
+    padding: 40px;
+ 
+}
+
+.card-wrapper{
+    position: relative;
+    min-height: 350px;
+    perspective: 2000px;
+    perspective-origin: top;
+}
+
+.card-wrapper:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card {
+    position: relative;
+    height: 100%; 
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.card-front{
+    background-image: url(../image/image_durama_.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-front,
+.card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-front1{
+    background-image: url(../image/mario.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-front1,
+.card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-front2{
+    background-image: url(../image/Album\ Elvis\ Presley.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-front2,
+.card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+
+.card-front3,
+.card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-front3{
+    background-image: url(../image/ligne\ de\ code.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-front4,
+.card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-front4{
+    background-image: url(../image/COM.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.card-wrapper:nth-child(even)  .card-front {
+    background-color: #1a2f42;
+}
+
+.card-front p {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.arrow-icon{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+
+}
+
+.card-price span {
+    font-size: 45px;
+}
+
+.card-back {
+    background: #2EC8D5;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back a {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    background-color: #fff;
+    color: #333;
+    transition: 
+    background-color 0.3s ease-out, color 0.3s ease-out;
+} 
+
+
+.card-wrapper:nth-child(odd)  .card-back a:hover {
+    background-color: #000000;
+    color: #fff
+}
+
+
+.card-wrapper:nth-child(even)  .card-back a:hover {
+    background-color: #ed5d34;
+    color: #fff
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #24262b;
+    padding:70px;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom:35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col H4::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #1ebae9;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color:#2c5da7;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 12px;   
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+
+}
+
+.boite6{
+    transition:all 1s ease-out 1s;
+}
+
+.boite6:hover{
+    transform: rotate(720deg);
+    background-color: red;
+}
+
+
+.elvis{
+  
+    text-align: center;
+    height: 50%;
+    width: 50%;
+   
+    
+}
+
+
+@media(max-width:767px){
+    .footer-col {
+        width: 50%;
+        margin: bottom 30px;
+}
+}
+
+
+@media(max-width:574px){
+    .footer-col {
+        width: 100%;
+}
+}
+
+body {
+    
+    background-image: url(../image/apple.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+   
+    
+}
+
+@media screen and (max-width: 1024px){/* Nouvelles règles si la fenêtre fait 1024px de large ou moins*/}
+
+@media screen and (max-width: 1024px) and (min-width:620px ) {/* Nouvelles règles si la fenêtre fait 1024px de large ou moins*/}
+    
+@media screen and (max-width: 600px) and (min-width:320px ) {/* Nouvelles règles si la fenêtre fait 1024px de large ou moins*/}
+
+
+@media all and (max-device-width:480px){}
+
+
+
+/*
+
+.move{
+    animation:SlideNight 30s infinite;
+}
+@keyframes SlideNight{
+    from{
+        transform: translate(50%);
+        background: blue;
+    }
+    30%{
+        transform: translate(-50%);
+        background: red;
+        color:white
+    }
+    80%{
+        transform: translate(200%);
+        background: green;
+        color: red;
+    }
+    to{
+        transform: translate(0);
+    }
+}
+
+
+.bouton{
+    position: absolute;
+    width: 70px;
+    cursor: pointer;
+    top: 150px;
+
+}
+
+#g{
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#d{
+    right: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+#g:hover{
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+#d:hover{
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+
+*/
+
+
+/* responsive */
+
+
+
+
+/*
+.contenu{
+   
+    flex: 1 0 auto;
+    text-align: justify;
+}
+
+.contenu p{
+    padding: 5vw 10vw;
+    
+}
+
+footer{
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+}
+
+
+footer{
+    width: 100%;
+    background: #f1f1f1;
+    color: #333;
+}
+
+.contenue-footer{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: :flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+}
+
+.bloc{
+    width: 20px;
+}
